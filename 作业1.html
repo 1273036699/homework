@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:640px) {
+            .whole {
+                margin-top: 10%;
+                width: 1000px;
+                height: 150px;
+                display: grid;
+                grid-template-columns: 150px 150px 150px 150px;
+                grid-template-rows: 220px;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                grid-template-areas: 'a b c d';
+            }
+            .box1 {
+                height: 120px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                justify-self: end;
+                align-items: end;
+                padding: 20px;
+                grid-area: 'a';
+            }
+            .box2 {
+                height: 100px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                padding: 20px;
+                grid-area: 'b';
+            }
+            .box3 {
+                height: 40px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                padding: 20px;
+                grid-area: 'c';
+            }
+            .box4 {
+                height: 200px;
+                line-height: 150px;
+                border: solid blue;
+                width: 150px;
+                padding: 20px;
+                justify-self: end;
+                align-items: end;
+                grid-area: 'd';
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            .whole {
+                width: 640px;
+                height: 150px;
+                display: grid;
+                grid-template-columns: 150px 150px 150px;
+                grid-template-rows: 220px 220px;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+                grid-template-areas: 'a b c' 'd e f';
+            }
+            .box1 {
+                height: 120px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                justify-self: end;
+                align-items: end;
+                padding: 20px;
+                grid-area: 'a';
+            }
+            .box2 {
+                height: 100px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                padding: 20px;
+                grid-area: 'b';
+            }
+            .box3 {
+                height: 40px;
+                line-height: 150px;
+                border: solid red;
+                width: 150px;
+                padding: 20px;
+                grid-area: 'c';
+            }
+            .box4 {
+                height: 200px;
+                line-height: 150px;
+                border: solid blue;
+                width: 150px;
+                padding: 20px;
+                justify-self: end;
+                align-items: end;
+                grid-area: 'd';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="box1">
+            <p class="p">#f00</p>
+        </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4">
+            <p class="p">#f00</p>
+        </div>
+    </div>
+</body>
+
+</html>
